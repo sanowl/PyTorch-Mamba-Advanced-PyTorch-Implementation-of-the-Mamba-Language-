@@ -3,6 +3,7 @@ import time
 from transformers import AutoTokenizer
 from mamba_model import Mamba
 from generate import generate
+import torch
 
 MODELS = {
     "130m": {"dim": 768, "n_layers": 24, "vocab_size": 50277, "pad_vocab_size_multiple": 8},
